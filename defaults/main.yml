@@ -33,6 +33,8 @@ varnish_yum_repo_baseurl: https://packagecloud.io/varnishcache/{{ varnish_packag
 # Only used on Debian / Ubuntu.
 varnish_apt_repo: deb https://packagecloud.io/varnishcache/{{ varnish_packagecloud_repo }}/{{ ansible_distribution | lower }}/ {{ ansible_distribution_release }} main
 
+varnish_disable_handlers: False
+
 # Optionally define additional backends.
 # varnish_backends:
 #   apache:
